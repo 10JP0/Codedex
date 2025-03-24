@@ -3,14 +3,14 @@ import math
 options = ["Square", "Rectangle", "Triangle", "Circle"]
 
 def welcome():
-    print("Hello! This is a area calculator")
-    print("Choose wich shape do you want to discover the are:\n1 - Square\n2 - Rectangle\n3 - Triangle\n4 - Circle\n5 - Quit")
+    print("Hello! This is an area calculator")
+    print("Choose which shape you want to calculate the area of:\n1 - Square\n2 - Rectangle\n3 - Triangle\n4 - Circle\n5 - Quit")
     while True:
         try:
             answer = int(input("Which shape have you chosen: "))
             if 1 <= answer <= 5:
                 if answer == 5:
-                    print("Good bye, have a good day.\nCome back when you need to calculate some areas!")
+                    print("Goodbye, have a good day.\nCome back when you need to calculate some areas!")
                     quit()
                 break
             else:
@@ -36,8 +36,8 @@ def square():
     return side ** 2
 
 def rectangle():
-    side1 = float(input("Enter the side length: "))
-    side2 = float(input("Enter the side width: "))
+    side1 = float(input("Enter the length:: "))
+    side2 = float(input("Enter the width: "))
     return side1 * side2
 
 def triangle():
@@ -51,17 +51,5 @@ def circle():
     return pi * (radius ** 2)
 
 
-
-
-
 shape = welcome()
-
 check_shape(shape)
-
-
-
-
-
-
-
-
